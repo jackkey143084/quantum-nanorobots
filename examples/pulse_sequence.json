@@ -1,0 +1,24 @@
+{
+  "sequence_id": "nanorobot-x-rotation",
+  "repetitions": 2048,
+  "gap_ns": 4.0,
+  "pulses": [
+    {
+      "frequency_ghz": 5.12,
+      "amplitude": 0.35,
+      "duration_ns": 32.0,
+      "phase_rad": 0.0,
+      "envelope": "drag",
+      "drag_beta": 0.45,
+      "target": "drive-0"
+    },
+    {
+      "frequency_ghz": 6.31,
+      "amplitude": 0.2,
+      "duration_ns": 48.0,
+      "phase_rad": 1.5707963267948966,
+      "envelope": "gaussian",
+      "target": "readout"
+    }
+  ]
+}

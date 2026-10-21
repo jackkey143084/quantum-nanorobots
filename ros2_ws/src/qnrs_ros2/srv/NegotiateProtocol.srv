@@ -1,0 +1,9 @@
+# Choose a control protocol for a device.
+string device_id
+string[] required_protocols
+bool allow_fallback
+---
+bool success
+string protocol
+float64 score
+string message

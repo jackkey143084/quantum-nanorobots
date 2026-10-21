@@ -1,0 +1,10 @@
+# Submit a gate-level circuit program.
+string program_json           # CircuitProgram serialized as JSON
+string device_id              # empty => auto-plan
+---
+bool success
+string job_id
+string device_id
+string counts_json
+float64 fidelity
+string message

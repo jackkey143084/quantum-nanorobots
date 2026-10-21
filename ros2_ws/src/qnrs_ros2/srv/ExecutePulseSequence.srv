@@ -1,0 +1,10 @@
+# Execute a pulse-level program on a Labber/QCoDeS-style instrument.
+string device_id
+string sequence_json          # PulseSequence serialized as JSON
+---
+bool success
+string job_id
+string device_id
+string counts_json
+float64 excitation
+string message

@@ -1,0 +1,17 @@
+// Nanorobot state-preparation scan (Silq front-end subset).
+// Each iteration prepares a superposition, entangles a probe pair and rotates
+// the drive qubit by a fraction of pi. Compile with:
+//     qnrs silq --file examples/nanorobot_scan.silq --shots 4096
+
+qubits 4;
+
+H(q0);
+RZ(pi/4, q0);
+CNOT(q0, q1);
+RY(0.7853981633974483, q2);
+CNOT(q2, q3);
+CZ(q1, q3);
+RZ(3*pi/2, q2);
+CNOT(q0, q2);
+x := measure(q0);
+forget(q1);

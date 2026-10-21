@@ -1,0 +1,12 @@
+{
+  "num_qubits": 3,
+  "operations": [
+    { "name": "H", "qubits": [0] },
+    { "name": "CNOT", "qubits": [0, 1] },
+    { "name": "RZ", "qubits": [2], "params": [0.7853981633974483] },
+    { "name": "CNOT", "qubits": [1, 2] }
+  ],
+  "shots": 4096,
+  "seed": 11,
+  "metadata": { "name": "three-qubit-ghz-ish", "author": "qnrs" }
+}
